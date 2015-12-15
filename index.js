@@ -13,7 +13,7 @@ var client = solr.createClient({
 var query = 'q=*%3A*&wt=json&indent=true';
 
 // Run query
-client.get('providers/select', query, function(err, obj){
+client.get('/select', query, function(err, obj){
   if ( err ) {
     console.log( err );
   } else {
